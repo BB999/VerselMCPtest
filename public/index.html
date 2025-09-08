@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vercel MCP Hello Server</title>
+</head>
+<body>
+    <h1>🤖 Vercel MCP Hello Server</h1>
+    <p>このサーバーはMCP (Model Context Protocol) APIを提供しています。</p>
+    
+    <h2>📡 API エンドポイント</h2>
+    <ul>
+        <li><a href="/api/server" target="_blank">/api/server</a> - サーバー情報</li>
+        <li><code>POST /api/server</code> - MCP API呼び出し</li>
+    </ul>
+    
+    <h2>🛠️ 利用可能なツール</h2>
+    <ul>
+        <li><strong>say_hello</strong> - こんにちはと挨拶を返します</li>
+    </ul>
+    
+    <h2>📖 使い方例</h2>
+    <pre><code>curl -X POST /api/server \
+  -H "Content-Type: application/json" \
+  -d '{
+    "method": "tools/call",
+    "params": {
+      "name": "say_hello",
+      "arguments": {"name": "太郎"}
+    }
+  }'</code></pre>
+</body>
+</html>
