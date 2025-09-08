@@ -1,7 +1,5 @@
-import { NextRequest, NextResponse } from 'next/server';
-
 export async function GET() {
-  return NextResponse.json({
+  return Response.json({
     jsonrpc: "2.0",
     result: {
       protocolVersion: "2024-11-05",
@@ -16,12 +14,12 @@ export async function GET() {
   });
 }
 
-export async function POST(request: NextRequest) {
+export async function POST(request: Request) {
   try {
     const body = await request.json();
     
     if (body.method === "tools/list") {
-      return NextResponse.json({
+      return Response.json({
         jsonrpc: "2.0",
         id: body.id,
         result: {
@@ -51,7 +49,7 @@ export async function POST(request: NextRequest) {
       
       if (toolName === "say_hello_vercel") {
         const name = args.name || "Vercel";
-        return NextResponse.json({
+        return Response.json({
           jsonrpc: "2.0",
           id: body.id,
           result: {
@@ -66,7 +64,7 @@ export async function POST(request: NextRequest) {
       }
     }
     
-    return NextResponse.json({
+    return Response.json({
       jsonrpc: "2.0",
       id: body.id,
       error: {
@@ -76,7 +74,7 @@ export async function POST(request: NextRequest) {
     });
     
   } catch (error) {
-    return NextResponse.json({
+    return Response.json({
       jsonrpc: "2.0",
       error: {
         code: -32700,

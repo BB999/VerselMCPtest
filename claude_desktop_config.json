@@ -1,9 +1,11 @@
 {
   "mcpServers": {
     "vercel-hello-mcp": {
-      "command": "node",
+      "command": "npx",
       "args": [
-        "/Users/noranekob/cursor/VerselMCPtest/mcp-server.js"
+        "mcp-remote",
+        "--url",
+        "https://versel-mc-ptest.vercel.app/api/mcp-simple"
       ],
       "env": {}
     }
