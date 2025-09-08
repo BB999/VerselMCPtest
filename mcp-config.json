@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "vercel-hello-server": {
+      "type": "http",
+      "url": "https://versel-mc-ptest.vercel.app/api/server",
+      "description": "Vercel上で動作するこんにちは挨拶MCPサーバー",
+      "tools": [
+        {
+          "name": "say_hello",
+          "description": "こんにちはと挨拶を返します（名前指定可能）"
+        }
+      ]
+    }
+  }
+}

@@ -9,10 +9,7 @@
     "start": "node api/server.js",
     "test": "node scripts/test-client.mjs"
   },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.0.0",
-    "cors": "^2.8.5"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@types/node": "^20.0.0",
     "typescript": "^5.0.0"
