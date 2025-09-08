@@ -5,7 +5,7 @@
       "args": [
         "mcp-remote",
         "--url",
-        "https://your-deployment-url.vercel.app/api/mcp"
+        "https://versel-mc-ptest.vercel.app/api/mcp"
       ],
       "env": {}
     }
