@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "vercel-hello-mcp": {
+      "command": "npx",
+      "args": [
+        "mcp-remote",
+        "--url",
+        "https://your-deployment-url.vercel.app/api/mcp"
+      ],
+      "env": {}
+    }
+  }
+}
